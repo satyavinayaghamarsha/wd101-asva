@@ -38,7 +38,7 @@ f.addEventListener('submit', (evnt) => {
 
   const db = document.getElementById('dob').value;
 
-  const trms = document.getElementById('terms').checked;
+  const trms = document.getElementById('trms').checked;
 
   // Validate date of birth
 
