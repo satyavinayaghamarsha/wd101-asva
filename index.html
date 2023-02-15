@@ -1,60 +1,97 @@
-<div id="id" class="MODEL">
+<html>
 
-  <span onclick="document.getElementById('id').style.display='none'"
+<head>
 
-class="close" title="Close MODEL">&times;</span>
+    <title>Form Registration</title>
 
-  
+    <link rel="stylesheet" href="style.css"/>
 
-  <form class="MODEL-content animate" action="/action_page.php">
+    <meta charset="UTF-8"/>
 
-    
-    <div class="cont">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      <label for="name"><b>Username</b></label>
+</head>
 
-      <input type="text" placeholder="Enter Username" name="name" required>
+<body>
 
-      <label for="password"><b>Password</b></label>
+<div class="page">
 
-      <input type="password" placeholder="Enter Password" name="password" required>
-      <label for="mail"><b>mail</b></label>
+    <div class="container">
 
-      <input type="mail" placeholder="Email" name="mail" required>
+        <form class="user-form">
 
-      
-      
-      <label for="db"><b>dob</b></label>
+            <div class="form-header">
 
-      <input type="db" placeholder="dob" name="db" required>
+                <h2>Registration Form</h2>
 
-      
-      
-      <label for="trms"><b>trms</b></label>
+            </div>
 
-      <input type="trms" placeholder="terms" name="trms" required>
+            <div class="frm-bdy">
 
-      
-      <button type="submit">Login</button>
+                <label for="name">Name</label>
 
+                <input required type="text" name="name" id="name"/>
 
+                <label for="email">Email</label>
 
-      <label>
+                <input required type="email" name="email" id="email"/>
 
-        <input type="checkbox" checked="checked" name="remember"> Remember me
+                <label for="password">Password</label>
 
-      </label>
+                <input required type="password" name="password" id="password"/>
+
+                <label for="db">Date of Birth</label>
+
+                <input required type="date" name="dob" id="dob"/>
+
+            </div>
+
+            <div class="form-terms">
+
+                <input type="checkbox" name="acceptTerms" id="acceptTerms"/>
+
+                <label for="acceptTerms">Accept Terms & Conditions</label>
+
+            </div>
+
+            <div class="form-submit">
+
+                <button id="submit" type="submit">Submit</button>
+
+            </div>
+
+        </form>
 
     </div>
 
-    <div class="cont" style="background-color:#f1f1f1">
+    <div class="user-history">
 
-      <button type="but" onclick="document.getElementById('id').style.display='none'" class="cancelbut">Cancel</button>
+   
 
-      <span class="password">Forgot <a href="#">password?</a></span>
+        <table id="hiy" class="hiy">
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Email</th>
+
+                <th>Password</th>
+
+                <th>Dob</th>
+
+                <th>Aterms</th>
+
+            </tr>
+
+        </table>
 
     </div>
-
-  </form>
 
 </div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
