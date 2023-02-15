@@ -135,23 +135,23 @@ sbmt.addEventListener("click", () => {
 
     const userDate = db.value
 
-    if (!dvalidity(userDate)) {
+    
 
         db.setCustomValidity(`Date must be between ${d.getFullYear() - 55}-${digits(date.getMonth() + 1)}-${digits(date.getDate())} and ${date.getFullYear() - 18}-${digits(date.getMonth() + 1)}-${digits(date.getDate())}`)
 
-    } else {
+    
 
         db.setCustomValidity("")
 
     }
 
-    const allValid = cv(nm) && cv(emailEl) && checkValidity(passwordEl) && checkValidity(dobEl)
+    const allValid = cv(nm) && cv(mail) && checkValidity(pwrd) && cvdb)
 
-    if (allValid) {
+    
 
-        sendStorage(nameEl.value, emailEl.value, passwordEl.value, dobEl.value, termsEl.checked)
+        sendStorage(nm.value, mail.value, pwrd.value, dd.value, trms.checked)
 
-    }
+    
 
 })
 
