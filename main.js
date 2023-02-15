@@ -72,7 +72,7 @@ f.addEventListener('submit', (evnt) => {
 
   row.insertCell().textContent = dob;
 
- row.insertCell().textContent = terms ? 'Yes' : 'No';
+ row.insertCell().textContent = trms ? 'Yes' : 'No';
 
   
 
