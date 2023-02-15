@@ -17,7 +17,7 @@ for (const u of u) {
  row.insertCell().textContent = password;
 
  row.insertCell().textContent = dob;
- row.insertCell().textContent = terms ? 'Yes' : 'No';
+ row.insertCell().textContent = trms ? 'Yes' : 'No';
 
 }
 
