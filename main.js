@@ -8,7 +8,7 @@ let u = JSON.parse(localStorage.getItem('u')) || [];
 
 for (const u of u) {
 
-  const { name, email, password, dob, terms } = u;
+  const { name, mail, password, dob, terms } = u;
 
   const row = thetable.insertRow();
  row.insertCell().textContent = name;
